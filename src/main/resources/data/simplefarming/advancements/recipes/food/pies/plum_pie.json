@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:plum_pie"
+    ]
+  },
+  "criteria": {
+    "has_plum": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:fruits/plum"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:plum_pie"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_plum",
+      "has_the_recipe"
+    ]
+  ]
+}
