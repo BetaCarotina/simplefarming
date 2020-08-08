@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:apple_pie"
+    ]
+  },
+  "criteria": {
+    "has_apple": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:fruits/apple"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:apple_pie"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_apple",
+      "has_the_recipe"
+    ]
+  ]
+}
