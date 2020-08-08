@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:string"
+    ]
+  },
+  "criteria": {
+    "has_kenaf": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:kenaf_fiber"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:string"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_kenaf",
+      "has_the_recipe"
+    ]
+  ]
+}
