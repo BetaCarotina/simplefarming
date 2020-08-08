@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:pear_pie"
+    ]
+  },
+  "criteria": {
+    "has_pear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:fruits/pear"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:pear_pie"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_pear",
+      "has_the_recipe"
+    ]
+  ]
+}
