@@ -6,7 +6,7 @@
     ]
   },
   "criteria": {
-    "has_apple": {
+    "has_blackberry": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
