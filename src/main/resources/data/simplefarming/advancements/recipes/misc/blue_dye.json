@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:blue_dye"
+    ]
+  },
+  "criteria": {
+    "has_blueberry": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:fruits/blueberries"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:blue_dye"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_blueberry",
+      "has_the_recipe"
+    ]
+  ]
+}
