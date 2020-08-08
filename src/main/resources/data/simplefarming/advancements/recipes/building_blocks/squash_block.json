@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:squash_block"
+    ]
+  },
+  "criteria": {
+    "has_squash": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:squash"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:squash_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_squash",
+      "has_the_recipe"
+    ]
+  ]
+}
