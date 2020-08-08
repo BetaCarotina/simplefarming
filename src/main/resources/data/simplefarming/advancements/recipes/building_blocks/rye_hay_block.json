@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:rye_hay_block"
+    ]
+  },
+  "criteria": {
+    "has_rye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:rye"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:rye_hay_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_rye",
+      "has_the_recipe"
+    ]
+  ]
+}
