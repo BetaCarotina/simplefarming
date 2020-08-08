@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:oat_hay_block"
+    ]
+  },
+  "criteria": {
+    "has_oat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:oat"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:oat_hay_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_oat",
+      "has_the_recipe"
+    ]
+  ]
+}
