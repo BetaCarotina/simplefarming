@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:pink_dye"
+    ]
+  },
+  "criteria": {
+    "has_cactus_fruit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:fruits/cactus_fruit"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:pink_dye"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cactus_fruit",
+      "has_the_recipe"
+    ]
+  ]
+}
