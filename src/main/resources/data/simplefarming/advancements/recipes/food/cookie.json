@@ -21,7 +21,7 @@
       "conditions": {
         "recipe": "simplefarming:cookie"
       }
-    }
+    },
     "has_vanilla_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
