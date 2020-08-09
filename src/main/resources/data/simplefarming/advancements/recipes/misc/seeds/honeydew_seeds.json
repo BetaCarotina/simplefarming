@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:honeydew_seeds"
+    ]
+  },
+  "criteria": {
+    "has_honeydew": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:honeydew"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:honeydew_seeds"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_honeydew",
+      "has_the_recipe"
+    ]
+  ]
+}
