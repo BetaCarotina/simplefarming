@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:broccoli_seeds"
+    ]
+  },
+  "criteria": {
+    "has_broccoli": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:broccoli"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:broccoli_seeds"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_broccoli",
+      "has_the_recipe"
+    ]
+  ]
+}
