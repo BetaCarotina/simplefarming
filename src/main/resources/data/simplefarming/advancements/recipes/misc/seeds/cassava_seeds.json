@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:cassava_seeds"
+    ]
+  },
+  "criteria": {
+    "has_cassava": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:cassava"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:cassava_seeds"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cassava",
+      "has_the_recipe"
+    ]
+  ]
+}
