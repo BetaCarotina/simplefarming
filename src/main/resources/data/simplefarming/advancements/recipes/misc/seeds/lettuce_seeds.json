@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:lettuce_seeds"
+    ]
+  },
+  "criteria": {
+    "has_lettuce": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:lettuce"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:lettuce_seeds"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_lettuce",
+      "has_the_recipe"
+    ]
+  ]
+}
