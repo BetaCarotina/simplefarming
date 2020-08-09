@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:ginger_seeds"
+    ]
+  },
+  "criteria": {
+    "has_ginger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:ginger"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:ginger_seeds"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_ginger",
+      "has_the_recipe"
+    ]
+  ]
+}
