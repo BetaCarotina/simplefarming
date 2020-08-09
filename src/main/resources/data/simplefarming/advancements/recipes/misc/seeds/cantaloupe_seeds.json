@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:cantaloupe_seeds"
+    ]
+  },
+  "criteria": {
+    "has_cantaloupe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:cantaloupe"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:cantaloupe_seeds"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cantaloupe",
+      "has_the_recipe"
+    ]
+  ]
+}
