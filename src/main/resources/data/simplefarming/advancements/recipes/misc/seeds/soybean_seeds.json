@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:soybean_seeds"
+    ]
+  },
+  "criteria": {
+    "has_soybean": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:soybean"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:soybean_seeds"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_soybean",
+      "has_the_recipe"
+    ]
+  ]
+}
