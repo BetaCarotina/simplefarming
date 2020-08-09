@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:peanut_seeds"
+    ]
+  },
+  "criteria": {
+    "has_peanut": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:peanut"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:peanut_seeds"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_peanut",
+      "has_the_recipe"
+    ]
+  ]
+}
