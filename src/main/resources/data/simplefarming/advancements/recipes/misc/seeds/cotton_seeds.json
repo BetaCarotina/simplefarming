@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:cotton_seeds"
+    ]
+  },
+  "criteria": {
+    "has_cotton": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:cotton"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:cotton_seeds"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cotton",
+      "has_the_recipe"
+    ]
+  ]
+}
