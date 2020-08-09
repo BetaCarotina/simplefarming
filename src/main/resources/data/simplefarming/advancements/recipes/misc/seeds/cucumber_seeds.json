@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:cucumber_seeds"
+    ]
+  },
+  "criteria": {
+    "has_cucumber": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:cucumber"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:cucumber_seeds"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cucumber",
+      "has_the_recipe"
+    ]
+  ]
+}
