@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:fish_fillet"
+    ]
+  },
+  "criteria": {
+    "has_fish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:cooked_fishes"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:fish_fillet"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_fish",
+      "has_the_recipe"
+    ]
+  ]
+}
