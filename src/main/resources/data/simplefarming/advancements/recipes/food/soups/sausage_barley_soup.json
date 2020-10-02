@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:sausage_barley_soup"
+    ]
+  },
+  "criteria": {
+    "has_sausage": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "simplefarming:cooked_sausage"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:sausage_barley_soup"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sausage",
+      "has_the_recipe"
+    ]
+  ]
+}
