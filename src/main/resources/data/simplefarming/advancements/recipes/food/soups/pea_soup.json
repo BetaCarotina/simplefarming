@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:pea_soup"
+    ]
+  },
+  "criteria": {
+    "has_pea": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:crops/pea"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:pea_soup"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_pea",
+      "has_the_recipe"
+    ]
+  ]
+}
