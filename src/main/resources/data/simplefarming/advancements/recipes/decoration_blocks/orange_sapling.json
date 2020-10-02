@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:orange_sapling"
+    ]
+  },
+  "criteria": {
+    "has_orange": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:fruits/orange"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:orange_sapling"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_orange",
+      "has_the_recipe"
+    ]
+  ]
+}
