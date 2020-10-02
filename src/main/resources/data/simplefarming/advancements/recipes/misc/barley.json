@@ -25,7 +25,7 @@
   },
   "requirements": [
     [
-      "has_barley",
+      "has_hay_block",
       "has_the_recipe"
     ]
   ]
