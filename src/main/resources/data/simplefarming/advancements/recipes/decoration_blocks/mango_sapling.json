@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplefarming:mango_sapling"
+    ]
+  },
+  "criteria": {
+    "has_mango": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:fruits/mango"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplefarming:mango_sapling"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_mango",
+      "has_the_recipe"
+    ]
+  ]
+}
